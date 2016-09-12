@@ -8,6 +8,9 @@ The goal of the project is to connect students with other students in the same s
 
 Steps to Pursue Project
 ----------------------
+1. Create template for GUI
+2. Plan the UI flow
+3. Design the database
 
 
 How to Evaluate Success
