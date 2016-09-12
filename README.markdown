@@ -23,6 +23,7 @@ Main Components
 *   Locaton sensitive
 *   Chat
 *   Student Profiles
+*   Networking
 
 Future Components
 -----
