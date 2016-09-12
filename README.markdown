@@ -12,6 +12,22 @@ Steps to Pursue Project
 
 How to Evaluate Success
 -----------------------
+We can track the popularity and usefulness of the app (through ratings)
+
+Main Components
+-----
+*   Subjects: English, Mathematics, Science, History, Languages
+*   Locaton sensitive
+*   Chat
+*   Student Profiles
+
+Future Components
+-----
+*   More Languages
+*   Expand to college students
+*   School sensitive
+*   Other countries
+
 
 
 
