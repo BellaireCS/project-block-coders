@@ -6,6 +6,8 @@
     <string name="button_text">Button Text!</string>
     <string name="button2_text">Other Button!</string>
 
+    <!-profile Strings-->
+    <string name="p_name">John Doe</string>
     <!--Sign-Up Page-->
     <string name="signup">Sign up!</string>
     <string name="name">Enter Name</string>
