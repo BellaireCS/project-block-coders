@@ -5,4 +5,11 @@
     <string name="text">I am a TextView</string>
     <string name="button_text">Button Text!</string>
     <string name="button2_text">Other Button!</string>
+
+    <!--Sign-Up Page-->
+    <string name="signup">Sign up!</string>
+    <string name="name">Enter Name</string>
+    <string name="email">Enter Email</string>
+    <string name="enterpass">Enter New Password</string>
+    <string name="enteruser">Enter New Username</string>
 </resources>
