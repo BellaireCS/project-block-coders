@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="hello_world">Hello World This is in res/strings.xml!</string>
+
+    <string name="text">I am a TextView</string>
+    <string name="button_text">Button Text!</string>
+</resources>
