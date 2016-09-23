@@ -31,23 +31,23 @@
             android:text="@string/p_name" />
 
     </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true">
 
-        <LinearLayout
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+
+
+    </ListView>
+
+
+
+    <!--    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/my_recycler_view"
-                android:scrollbars="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
 
             <Button
                 android:id="@+id/field1"
@@ -95,6 +95,5 @@
                 android:layout_height="wrap_content"
                 android:text="@string/p_field2" />
         </LinearLayout>
-    </ScrollView>
-
+-->
 </LinearLayout>
