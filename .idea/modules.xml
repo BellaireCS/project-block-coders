@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$USER_HOME$/projects/repos/bellaire/fall-project/app/app.iml" filepath="$USER_HOME$/projects/repos/bellaire/fall-project/app/app.iml" />
       <module fileurl="file://$USER_HOME$/projects/repos/bellaire/fall-project/fall-project.iml" filepath="$USER_HOME$/projects/repos/bellaire/fall-project/fall-project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project-block-coders.iml" filepath="$PROJECT_DIR$/project-block-coders.iml" />
     </modules>
   </component>
 </project>

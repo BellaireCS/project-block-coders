@@ -22,6 +22,8 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:laout_height="8dp"
             android:id="@+id/imageView" />
 
         <TextView
@@ -32,68 +34,139 @@
 
     </LinearLayout>
 
-    <ListView
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-      <TextView
-
-
-    </ListView>
-
-
-
-    <!--    <LinearLayout
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls" >
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle" >
 
-            <Button
-                android:id="@+id/field1"
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field1" />
-            <Button
-                android:id="@+id/field2"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field1"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans2"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field3"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field2"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans2"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field4"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field3"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans3"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field5"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field1"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans2"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
-            <Button
-                android:id="@+id/field9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/p_field2" />
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field1"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans2"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
         </LinearLayout>
--->
+
+
+    </ScrollView>
+
+
 </LinearLayout>
