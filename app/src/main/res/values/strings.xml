@@ -6,7 +6,11 @@
     <string name="button_text">Button Text!</string>
     <string name="button2_text">Other Button!</string>
 
-    <!-profile strings-->
+    <!--General Use Strings-->
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+
+    <!--profile strings-->
     <string name="p_name">John Doe</string>
     <string name="p_field1">field1</string>
     <string name="p_ans1">ans1</string>

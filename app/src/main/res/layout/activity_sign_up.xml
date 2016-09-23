@@ -20,7 +20,19 @@
         <EditText android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
             android:hint="@string/signup"/>
+
+        <EditText android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"/>
+
+        <EditText android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"/>
+
     </LinearLayout>
 
 
