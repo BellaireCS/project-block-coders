@@ -8,14 +8,14 @@
         <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/projects/repos/bellaire/fall-project" />
+            <option value="$USER_HOME$/projects/repos/bellaire/fall-project/app" />
           </set>
         </option>
         <option name="myModules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/projects/repos/bellaire/fall-project" />
+            <option value="$USER_HOME$/projects/repos/bellaire/fall-project/app" />
           </set>
         </option>
       </GradleProjectSettings>

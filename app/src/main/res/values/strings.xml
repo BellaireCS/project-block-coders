@@ -6,13 +6,10 @@
     <string name="button_text">Button Text!</string>
     <string name="button2_text">Other Button!</string>
 
-<<<<<<< Updated upstream
     <!--General Use Strings-->
     <string name="done">Done</string>
     <string name="next">Next</string>
 
-=======
->>>>>>> Stashed changes
     <!--profile strings-->
     <string name="p_name">John Doe</string>
     <string name="p_field1">field1</string>
