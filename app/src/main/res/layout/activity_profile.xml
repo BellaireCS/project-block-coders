@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
+    android:targetSdkVersion="21"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="3"
+        android:elevation="6dp"
         android:orientation="horizontal"
         android:paddingBottom="16dp"
         android:baselineAligned="false">
@@ -23,7 +25,6 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="16dp"
-            android:laout_height="8dp"
             android:id="@+id/imageView" />
 
         <TextView
@@ -37,6 +38,7 @@
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+        android:elevation="2dp"
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:overScrollMode="ifContentScrolls" >
@@ -160,6 +162,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/p_ans2"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field1"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans3"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_field2"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_ans3"
                     android:textAppearance="?android:attr/textAppearanceListItem"
                     />
             </LinearLayout>
