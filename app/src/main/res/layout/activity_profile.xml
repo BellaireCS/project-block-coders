@@ -11,6 +11,7 @@
     android:orientation="vertical"
     android:baselineAligned="false">
     <LinearLayout
+        android:paddingTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="3"
@@ -50,6 +51,7 @@
             android:showDividers="middle" >
 
             <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:layout_width="match_parent"
@@ -74,6 +76,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:background="?android:attr/selectableItemBackground"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:clickable="true"
@@ -98,6 +101,7 @@
 
             <LinearLayout
                 android:paddingLeft="8dp"
+                android:background="?android:attr/selectableItemBackground"
                 android:paddingRight="8dp"
                 android:layout_width="match_parent"
                 android:clickable="true"
@@ -120,6 +124,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:layout_width="match_parent"
@@ -145,6 +150,7 @@
 
             <LinearLayout
                 android:paddingLeft="8dp"
+                android:background="?android:attr/selectableItemBackground"
                 android:paddingRight="8dp"
                 android:layout_width="match_parent"
                 android:clickable="true"
@@ -166,51 +172,6 @@
                     />
             </LinearLayout>
 
-            <LinearLayout
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field1"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans3"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field2"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans3"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
         </LinearLayout>
 
 
