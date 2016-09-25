@@ -61,7 +61,7 @@
         jar="/home/rugwing/projects/repos/bellaire/fall-project/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.2"
-        sha1="d3cd2f7d6123da9946214d4db0de72798bd417c1">
+        sha1="72aabfdfb5d9c993e96d435b2d221b21c65a9f46">
         <dex dex="/home/rugwing/projects/repos/bellaire/fall-project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_951b448ed7c6b85f9c9be5f8b4b1e47e6158da00/classes.dex" />
     </item>
     <item
@@ -117,7 +117,7 @@
         jar="/home/rugwing/projects/repos/bellaire/fall-project/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.2"
-        sha1="b3682242e21bed542f7e4b575e4f913d0b9b5793">
+        sha1="293dc9b72fe4590f27b0a3932948d1bbb5b73362">
         <dex dex="/home/rugwing/projects/repos/bellaire/fall-project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3888e2d73564e183e86b4057889485930af7b883/classes.dex" />
     </item>
 
