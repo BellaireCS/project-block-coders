@@ -1,185 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <LinearLayout
     android:targetSdkVersion="21"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="3"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical"
-    android:baselineAligned="false">
-
-    <LinearLayout
-        android:paddingTop="16dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="3"
         android:elevation="4dp"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp"
-        android:baselineAligned="false">
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
 
 
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/noface"
-            android:id="@+id/imageView" />
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/p_name" />
-
-    </LinearLayout>
-
-    <ScrollView
+    <LinearLayout
+        android:targetSdkVersion="21"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:elevation="2dp"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:overScrollMode="ifContentScrolls" >
+        android:weightSum="3"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
         <LinearLayout
+            android:paddingTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:divider="?android:attr/dividerHorizontal"
-            android:showDividers="middle" >
+            android:weightSum="3"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:baselineAligned="false">
 
-            <LinearLayout
-                android:background="?android:attr/selectableItemBackground"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/noface"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/text"
                 android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field1"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans2"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:background="?android:attr/selectableItemBackground"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field2"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans2"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:paddingLeft="8dp"
-                android:background="?android:attr/selectableItemBackground"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field3"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans3"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:background="?android:attr/selectableItemBackground"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field1"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans2"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:paddingLeft="8dp"
-                android:background="?android:attr/selectableItemBackground"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:layout_height="72dp" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_field1"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p_ans2"
-                    android:textAppearance="?android:attr/textAppearanceListItem"
-                    />
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="@string/p_name" />
 
         </LinearLayout>
 
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="middle" >
 
-    </ScrollView>
+                <LinearLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_height="72dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_field1"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_ans2"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_height="72dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_field2"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_ans2"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_height="72dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_field3"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_ans3"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_height="72dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_field1"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_ans2"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                </LinearLayout>
 
 
+                <LinearLayout
+                    android:paddingLeft="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:layout_height="72dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_field1"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p_ans2"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
 </LinearLayout>
-

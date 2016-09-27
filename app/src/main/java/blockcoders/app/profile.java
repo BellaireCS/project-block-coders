@@ -5,7 +5,11 @@ import android.widget.ImageView;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.support.v7.view.menu.*;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class profile extends AppCompatActivity {
 
@@ -14,11 +18,37 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Sets the Toolbar to act as the ActionBar for this Activity window.
+        // Make sure the toolbar exists in the activity and is not null
+        setSupportActionBar(toolbar);
+
         Bitmap bm = imagePlace(R.drawable.totoro, 150, 150);
         ImageView image = (ImageView) findViewById(R.id.imageView);
         image.setImageBitmap(bm);
         image.setImageResource(R.drawable.totoro);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // User chose the "Settings" item, show the app settings UI...
+                return true;
+
+            case R.id.action_favorite:
+                // User chose the "Favorite" action, mark the current item
+                // as a favorite...
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
     private Bitmap imagePlace(int resId, int reqWidth, int reqHeight)
     {
         // First decode with inJustDecodeBounds=true to check dimensions
