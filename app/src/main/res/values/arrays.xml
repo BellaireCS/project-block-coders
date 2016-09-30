@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array
+        name="pref_subjects_entries">
+        <item>Precalculus</item>
+        <item>English</item>
+        <item>Physics</item>
+        <item>Computer Science</item>
+    </array>
+
+</resources>

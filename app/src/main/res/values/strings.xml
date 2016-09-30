@@ -18,6 +18,10 @@
     <string name="p_ans2">ans2</string>
     <string name="p_field3">field3</string>
     <string name="p_ans3">ans3</string>
+    <!--Preferences-->
+    <string name="pref_name">Name</string>
+    <string name="pref_grade">Grade</string>
+    <string name="pref_subjects_title">Subjects</string>
 
 
     <!--Sign-Up Page-->
