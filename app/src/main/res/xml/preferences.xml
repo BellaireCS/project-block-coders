@@ -15,12 +15,14 @@
         android:title="@string/pref_grade"
         android:defaultValue="@string/pref_grade"
         />
-    <ListPreference
+    <MultiSelectListPreference
         android:key="pref_subjects"
         android:title="@string/pref_subjects_title"
         android:dialogTitle="@string/pref_subjects_title"
-        android:entries="@string/pref_subjects_entries"
-        android:entryValues="@string/"
+        android:enabled="true"
+        android:entries="@array/pref_subjects_entries"
+        android:entryValue="@array/pref_subjects_entryValues"
+        android:defalutValue="@array/pref_subjects_default"
         />
 
     <ListPreference
