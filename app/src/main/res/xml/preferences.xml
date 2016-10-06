@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference
-        android:key="pref_sync"
-        android:title="@string/pref_sync"
-        android:summary="@string/pref_sync_summ"
-        android:defaultValue="true" />
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
         android:key="pref_name"
         android:title="@string/pref_name"
-        android:defaultValue="@string/pre_name"
+        android:defaultValue="@string/pref_name"
         />
     <EditTextPreference
         android:key="pref_grade"
@@ -21,16 +18,6 @@
         android:dialogTitle="@string/pref_subjects_title"
         android:enabled="true"
         android:entries="@array/pref_subjects_entries"
-        android:entryValue="@array/pref_subjects_entryValues"
-        android:defalutValue="@array/pref_subjects_default"
+        android:entryValues="@array/pref_subjects_entryValues"
         />
-
-    <ListPreference
-        android:dependency="pref_sync"
-        android:key="pref_syncConnectionType"
-        android:title="@string/pref_syncConnectionType"
-        android:dialogTitle="@string/pref_syncConnectionType"
-        android:entries="@array/pref_syncConnectionTypes_entries"
-        android:entryValues="@array/pref_syncConnectionTypes_values"
-        android:defaultValue="@string/pref_syncConnectionTypes_default" />
 </PreferenceScreen>
