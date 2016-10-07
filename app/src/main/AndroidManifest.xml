@@ -27,6 +27,10 @@
         <activity android:name=".SignUp" />
         <activity android:name=".adapter" />
         <activity android:name=".profile" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".SettingsFragment"></activity>
     </application>
 
 </manifest>

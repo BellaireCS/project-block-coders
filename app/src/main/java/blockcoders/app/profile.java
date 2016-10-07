@@ -29,10 +29,6 @@ public class profile extends AppCompatActivity {
         image.setImageBitmap(bm);
         image.setImageResource(R.drawable.totoro);
 
-        getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new SettingsFragment())
-                .commit();
-
     }
 
     public static class SettingsFragment extends PreferenceFragment {
