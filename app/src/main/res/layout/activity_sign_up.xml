@@ -15,22 +15,42 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <EditText android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:hint="@string/signup"/>
 
+        <!--enter name-->
         <EditText android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/name"/>
-
+            android:hint="@string/name"
+            android:inputType="text|textCapWords"/>
+        <!--enter email-->
         <EditText android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/email"/>
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText android:id="@+id/enterpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enterpass"
+            android:inputType="text"/>
+
+        <EditText android:id="@+id/enteruser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enteruser"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done" />
 
     </LinearLayout>
 
