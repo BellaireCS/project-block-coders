@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.support.v7.view.menu.*;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.preference.*;
 
 public class profile extends AppCompatActivity {
 
@@ -27,27 +28,24 @@ public class profile extends AppCompatActivity {
         ImageView image = (ImageView) findViewById(R.id.imageView);
         image.setImageBitmap(bm);
         image.setImageResource(R.drawable.totoro);
+
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new SettingsFragment())
+                .commit();
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_settings:
-                // User chose the "Settings" item, show the app settings UI...
-                return true;
+    public static class SettingsFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
 
-            case R.id.action_favorite:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
-                return true;
-
-            default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
-
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.preferences);
         }
     }
+
+
 
     private Bitmap imagePlace(int resId, int reqWidth, int reqHeight)
     {

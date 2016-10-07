@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="blockcoders.app">
-    <uses-sdk android:minSdkVersion="21"
-        android:targetSdkVersion="24"
-        android:maxSdkVersion="24" />
+
+    <uses-sdk
+        android:maxSdkVersion="24"
+        android:minSdkVersion="21"
+        android:targetSdkVersion="24" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +26,7 @@
         </activity>
         <activity android:name=".SignUp" />
         <activity android:name=".adapter" />
-        <activity android:name=".profile"></activity>
+        <activity android:name=".profile" />
     </application>
 
 </manifest>
