@@ -20,6 +20,11 @@ import android.preference.PreferenceManager;
 import android.preference.RingtonePreference;
 import android.text.TextUtils;
 import android.view.MenuItem;
+import android.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.preference.PreferenceFragment;
+
 
 import java.util.List;
 
@@ -45,12 +50,16 @@ public class SettingsActivity extends AppCompatActivity {
                 .replace(android.R.id.content, new SettingsFragment())
                 .commit();
     }
-}
 
-static class SettingsFragment extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public static class SettingsFragment extends PreferenceFragment {
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.preferences);
+        }
     }
 }
