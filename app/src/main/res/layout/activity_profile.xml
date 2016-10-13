@@ -79,6 +79,7 @@
                     android:paddingRight="8dp"
                     android:layout_width="match_parent"
                     android:clickable="true"
+                    android:onClick="click_field1"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -103,6 +104,7 @@
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:clickable="true"
+                    android:onClick="click_field2"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -128,6 +130,7 @@
                     android:paddingRight="8dp"
                     android:layout_width="match_parent"
                     android:clickable="true"
+                    android:onClick="click_field3"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -152,6 +155,7 @@
                     android:paddingRight="8dp"
                     android:layout_width="match_parent"
                     android:clickable="true"
+                    android:onClick="click_field4"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -177,6 +181,7 @@
                     android:paddingRight="8dp"
                     android:layout_width="match_parent"
                     android:clickable="true"
+                    android:onClick="click_field5"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 

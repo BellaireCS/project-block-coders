@@ -11,7 +11,11 @@ import android.support.v7.view.menu.*;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.preference.*;
-
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 public class profile extends AppCompatActivity {
 
     @Override
@@ -30,6 +34,26 @@ public class profile extends AppCompatActivity {
         image.setImageResource(R.drawable.totoro);
 
     }
+    public void click_field1(View view){
+        Intent intent = new Intent(this, Click_field1.class);
+        startActivity(intent);
+    }
+//    public void click_field2(View view){
+//        Intent intent = new Intent(this, Click_field2.class);
+//        StartActivity(intent);
+//    }
+//    public void click_field3(View view){
+//        Intent intent = new Intent(this, Click_field3.class);
+//        StartActivity(intent);
+//    }
+//    public void click_field4(View view){
+//        Intent intent = new Intent(this, Click_field4.class);
+//        StartActivity(intent);
+//    }
+//    public void click_field5(View view){
+//        Intent intent = new Intent(this, Click_field5.class);
+//        StartActivity(intent);
+//    }
 
     public static class SettingsFragment extends PreferenceFragment {
         @Override

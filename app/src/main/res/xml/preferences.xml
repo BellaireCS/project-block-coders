@@ -19,5 +19,6 @@
         android:enabled="true"
         android:entries="@array/pref_subjects_entries"
         android:entryValues="@array/pref_subjects_entryValues"
+        android:defaultValue="@array/pref_subjects_default"
         />
 </PreferenceScreen>
