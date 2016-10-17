@@ -16,6 +16,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.view.View.OnClickListener;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.widget.ScrollView;
+
 public class profile extends AppCompatActivity {
 
     @Override
@@ -33,10 +39,37 @@ public class profile extends AppCompatActivity {
         image.setImageBitmap(bm);
         image.setImageResource(R.drawable.totoro);
 
-    }
-    public void click_field1(View view){
-        Intent intent = new Intent(this, Click_field1.class);
-        startActivity(intent);
+
+        LinearLayout name = (LinearLayout) findViewById(R.id.name);
+
+        OnClickListener nameListen = new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(profile.this, Click_field1.class);
+                startActivity(intent);
+            }
+        };
+
+        name.setOnClickListener(nameListen);
+
+        //LinearLayout field1 = (LinearLayout) scroll.findViewById(R.id.field1);
+        //OnClickListener field1Listen = new OnClickListener() {
+        //    public void onClick(View v)
+        //    {
+        //        Intent intent = new Intent(profile.this, Click_field1.class);
+        //        startActivity(intent);
+        //    }
+        //};
+        //field1.setOnClickListener(field1Listen);
+
+
+        //field1.setOnClickListener(new View.OnClickListener(){
+        //    @Override
+        //    public void onClick(View v)
+        //    {
+   //             Intent intent = new Intent(this, Click_field1.class);
+   //             startActivity(intent);
+        //    }
+        //});
     }
 //    public void click_field2(View view){
 //        Intent intent = new Intent(this, Click_field2.class);
