@@ -40,17 +40,6 @@ public class profile extends AppCompatActivity {
         image.setImageResource(R.drawable.totoro);
 
 
-        LinearLayout name = (LinearLayout) findViewById(R.id.name);
-
-        OnClickListener nameListen = new OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(profile.this, Click_field1.class);
-                startActivity(intent);
-            }
-        };
-
-        name.setOnClickListener(nameListen);
-
         //LinearLayout field1 = (LinearLayout) scroll.findViewById(R.id.field1);
         //OnClickListener field1Listen = new OnClickListener() {
         //    public void onClick(View v)
