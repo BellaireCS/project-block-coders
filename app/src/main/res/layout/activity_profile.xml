@@ -22,10 +22,10 @@
 
 
     <LinearLayout
-        android:targetSdkVersion="21"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
         android:weightSum="3"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
@@ -71,19 +71,20 @@
             android:overScrollMode="ifContentScrolls" >
             <LinearLayout
                 android:layout_width="match_parent"
+                android:id="@+id/scroll_view_child"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:divider="?android:attr/dividerHorizontal"
                 android:showDividers="middle" >
 
+
                 <LinearLayout
+                    android:layout_width="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:layout_width="match_parent"
+                    android:id="@+id/layout_1"
                     android:clickable="true"
-                    android:onClick="click_field1"
-                    android:id="@+id/field1"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -97,18 +98,17 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/p_ans2"
+                        android:text="@string/p_ans1"
                         android:textAppearance="?android:attr/textAppearanceListItem"
                         />
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:background="?android:attr/selectableItemBackground"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
+                    android:layout_width="match_parent"
                     android:clickable="true"
-                    android:onClick="click_field2"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -125,16 +125,14 @@
                         android:text="@string/p_ans2"
                         android:textAppearance="?android:attr/textAppearanceListItem"
                         />
-
                 </LinearLayout>
 
                 <LinearLayout
-                    android:paddingLeft="8dp"
                     android:background="?android:attr/selectableItemBackground"
+                    android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:layout_width="match_parent"
                     android:clickable="true"
-                    android:onClick="click_field3"
                     android:orientation="vertical"
                     android:layout_height="72dp" >
 
@@ -153,53 +151,28 @@
                         />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:background="?android:attr/selectableItemBackground"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
-                    android:layout_width="match_parent"
-                    android:clickable="true"
-                    android:onClick="click_field4"
-                    android:orientation="vertical"
-                    android:layout_height="72dp" >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/p_field1"
-                        android:textStyle="bold"
-                        android:textAppearance="?android:attr/textAppearanceListItem"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/p_ans2"
-                        android:textAppearance="?android:attr/textAppearanceListItem"
-                        />
-                </LinearLayout>
-
 
                 <LinearLayout
                     android:paddingLeft="8dp"
                     android:background="?android:attr/selectableItemBackground"
                     android:paddingRight="8dp"
-                    android:layout_width="match_parent"
+                    android:id="@+id/layout_4"
                     android:clickable="true"
                     android:onClick="click_field5"
                     android:orientation="vertical"
-                    android:layout_height="72dp" >
+                    android:layout_height="72dp"
+                    android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/p_field1"
+                        android:text="@string/p_field4"
                         android:textStyle="bold"
                         android:textAppearance="?android:attr/textAppearanceListItem"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/p_ans2"
                         android:textAppearance="?android:attr/textAppearanceListItem"
                         />
                 </LinearLayout>

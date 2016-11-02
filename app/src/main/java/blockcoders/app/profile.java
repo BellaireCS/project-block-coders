@@ -21,14 +21,16 @@ import android.view.View.OnClickListener;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.ScrollView;
+import android.app.Activity;
 
 public class profile extends AppCompatActivity {
+
+    private Activity myActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
@@ -39,52 +41,16 @@ public class profile extends AppCompatActivity {
         image.setImageBitmap(bm);
         image.setImageResource(R.drawable.totoro);
 
+        this.myActivity = this;
 
-        //LinearLayout field1 = (LinearLayout) scroll.findViewById(R.id.field1);
-        //OnClickListener field1Listen = new OnClickListener() {
-        //    public void onClick(View v)
-        //    {
-        //        Intent intent = new Intent(profile.this, Click_field1.class);
-        //        startActivity(intent);
-        //    }
-        //};
-        //field1.setOnClickListener(field1Listen);
+        LinearLayout field1 = (LinearLayout)findViewById(R.id.layout_1);
+        field1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                Intent i = new Intent(myActivity.getApplicationContext(), changeField1.class);
+                startActivity(i);
+            }
+        });
 
-
-        //field1.setOnClickListener(new View.OnClickListener(){
-        //    @Override
-        //    public void onClick(View v)
-        //    {
-   //             Intent intent = new Intent(this, Click_field1.class);
-   //             startActivity(intent);
-        //    }
-        //});
-    }
-//    public void click_field2(View view){
-//        Intent intent = new Intent(this, Click_field2.class);
-//        StartActivity(intent);
-//    }
-//    public void click_field3(View view){
-//        Intent intent = new Intent(this, Click_field3.class);
-//        StartActivity(intent);
-//    }
-//    public void click_field4(View view){
-//        Intent intent = new Intent(this, Click_field4.class);
-//        StartActivity(intent);
-//    }
-//    public void click_field5(View view){
-//        Intent intent = new Intent(this, Click_field5.class);
-//        StartActivity(intent);
-//    }
-
-    public static class SettingsFragment extends PreferenceFragment {
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-
-            // Load the preferences from an XML resource
-            addPreferencesFromResource(R.xml.preferences);
-        }
     }
 
 
