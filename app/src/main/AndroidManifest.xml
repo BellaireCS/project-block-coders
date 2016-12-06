@@ -2,11 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="blockcoders.app">
 
-    <uses-sdk
-        android:maxSdkVersion="24"
-        android:minSdkVersion="21"
-        android:targetSdkVersion="24" />
-
     <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -32,7 +27,24 @@
             android:label="@string/title_activity_settings" />
         <activity android:name=".SettingsFragment" />
         <activity android:name=".Click_field1" />
-        <activity android:name=".changeFIeld1"></activity>
+        <activity android:name=".changeFIeld1" />
+        <activity android:name=".SignInActivity" />
+        <service
+            android:name=".MyFiregaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

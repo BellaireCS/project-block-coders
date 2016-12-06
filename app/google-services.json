@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "745937434723",
+    "firebase_url": "https://chat-4726e.firebaseio.com",
+    "project_id": "chat-4726e",
+    "storage_bucket": "chat-4726e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745937434723:android:9918f132f69c0c08",
+        "android_client_info": {
+          "package_name": "blockcoders.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745937434723-gpg4pkp81run8sp0fj3d0e8bnp6d6c6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "blockcoders.app",
+            "certificate_hash": "95ABDEAEDC50DE713EB066C760523C7A3FE44ECA"
+          }
+        },
+        {
+          "client_id": "745937434723-4dbpermoj1foomi257bq14kl6a4fr2ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPSLgXoz9vDJUZ_TI3iOpabI3wU-Xytz4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745937434723-4dbpermoj1foomi257bq14kl6a4fr2ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
